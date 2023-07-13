@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Create RPS</title>
+    <link rel="icon" href="pic/icon-amikom.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    .navbar-text {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+
+    footer {
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <nav class="navbar sticky-top" style="background-color: #7930A5;">
+
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="pic/logo-amikom.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            </a>
+
+            <span class="navbar-text">
+                Create RPS
+            </span>
+
+            <a href="dashboard.html">
+                <button type="submit" class="btn btn-warning ms-auto">Kembali ke Dashboard</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container form-control mt-3">
+        <br>
+        <div class="InformasiPokok">
+            <h5><b>Informasi Pokok</b></h5>
+            <div class="row">
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Judul RPS</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Judul RPS">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Program Studi</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Program Studi">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Semester</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Semester">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Mata Kuliah</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Nama Mata Kuliah">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 w-50">
+                    <label for="exampleFormControlInput1" class="form-label">Dosen Pengampu</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Nama Dosen Pengampu">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">SKS</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ketikkan Jumlah SKS">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 w-25">
+                    <label for="tanggalsusun">Tanggal Penyusunan RPS</label>
+                    <input type="date" class="form-control" id="tanggalsusun" placeholder="tanggal">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="tanggalvalid">Tanggal RPS Mulai Berlaku</label>
+                    <input type="date" class="form-control" id="tanggalvalid" placeholder="tanggal">
+                </div>
+                <div class="mb-3 w-50">
+                    <label for="formFile">Upload Tandatangan Dosen</label>
+                    <input class="form-control text-center" type="file" id="formFile">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="DetailPresentase">
+            <h5><b>Detail Presentase Penilaian</b></h5>
+            <div class="row">
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Presensi</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Masukkan Presentase Presensi">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Ujian Tengah Semester</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Masukkan Presentase UTS">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Ujian Akhir Semester</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Masukkan Presentase UAS">
+                </div>
+                <div class="mb-3 w-25">
+                    <label for="exampleFormControlInput1" class="form-label">Tugas</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Masukkan Presentase Tugas">
+                </div>
+            </div>
+
+            <br>
+        </div>
+        <div class="TextArea">
+            <h5><b>Gambaran Umum</b< /h5>
+                    <textarea class="form-control my-2" name="Deskripsi" id="deskripsimatkul"
+                        placeholder="Masukkan Gambaran Umum RPS" cols="30" rows="3"></textarea>
+                    <h5"><b>Capaian Pembelajaran</b< /h5>
+                            <textarea class="form-control my-2" name="Deskripsi" id="deskripsimatkul"
+                                placeholder="Masukkan Rencana Capaian Pembelajaran" cols="30" rows="3"></textarea>
+                            <h5"><b>Prasyarat dan Pengetahuan Awal</b></h5>
+            <textarea class="form-control my-2" name="Deskripsi" id="deskripsimatkul"
+                placeholder="Masukkan Rencana Prasyarat dan Pengetahuan Awal" cols="30" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="UnitForm">
+            <h5><b>Unit-Unit Pembelajaran</b></h5>
+            <form class="row g-3">
+                <div class="col-auto">
+                    <input type="password" class="form-control" placeholder="Masukkan Tabel Unit-unit">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-warning mb-3">
+                        <img src="pic/+.png" width="20" alt="Tambah" />
+                    </button>
+                </div>
+            </form>
+            <br>
+            <h5><b>Tugas/Aktivitas Penilaian</b></h5>
+            <form class="row g-3">
+                <div class="col-auto">
+                    <input type="password" class="form-control" placeholder="Masukkan Tabel Tugas">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-warning mb-3">
+                        <img src="pic/+.png" width="20" alt="Tambah" />
+                    </button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <h5><b>Referensi</b< /h5>
+                <textarea class="form-control my-2" name="Deskripsi" id="deskripsimatkul"
+                    placeholder="Masukkan Daftar Referensi" cols="30" rows="3"></textarea>
+                <br>
+                <h5><b>Rencana Pelaksanaan Pembelajaran</b></h5>
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <input type="password" class="form-control" placeholder="Masukkan Tabel RPP">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-warning mb-3">
+                            <img src="pic/+.png" width="20" alt="Tambah" />
+                        </button>
+                    </div>
+                </form>
+    </div>
+
+    <footer class="sticky-bottom" style="background-color: #7930A5;">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-12">
+                    <a href="view.html">
+                        <button type="button" class="btn btn-warning">Preview</button>
+                    </a>
+                    <a href="dashboard.html">
+                        <button type="button" class="btn btn-warning">Simpan</button>
+                        <a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

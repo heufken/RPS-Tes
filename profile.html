@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Profile Tab</title>
+    <link rel="icon" href="pic/icon-amikom.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .navbar-text {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+
+    .img-login {
+        display: block;
+        width: 10%;
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <nav class="navbar sticky-top" style="background-color: #7930A5;">
+
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="pic/logo-amikom.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            </a>
+
+            <span class="navbar-text">
+                Profile
+            </span>
+
+            <a href="dashboard.html">
+                <button type="submit" class="btn btn-warning ms-auto">Kembali ke Dashboard</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid pl-3">
+        <h5 style="text-align: left; padding-top: 20px;">Ubah Foto Profil</h5>
+        <img src="pic/logo.png" class="img-login">
+        <br>
+        <div class="content-profile justify-content-center">
+            <div class="mb-3 w-25">
+                <input class="form-control text-center" type="file" id="formFile">
+                <button type="submit" class="btn btn-warning col-md-12 mb-3">Simpan</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

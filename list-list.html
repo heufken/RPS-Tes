@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>List RPS</title>
+    <link rel="icon" href="pic/icon-amikom.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    .navbar-text {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+
+    .nav-tabs .nav-link {
+        background-color: #ffbf35;
+        color: #000000;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #c79b3b;
+        border-bottom: 2px solid #000000;
+    }
+
+
+    .card {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    .card-body {
+        background-color: #7930A5;
+
+    }
+
+    .card-header {
+        background-color: #51236e;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+    }
+
+    .card-title {
+        color: white;
+    }
+
+    .card-text {
+        color: white;
+    }
+
+    .ml-auto {
+        margin-left: auto !important;
+    }
+
+    .search-input {
+        float: right;
+        width: 200px;
+        margin-left: 1045px;
+    }
+
+    .textviewmode {
+        text-align: right;
+        margin-right: 60px;
+    }
+
+    .textviewmode img {
+        width: 15px;
+        float: right;
+        margin-right: 10px;
+        margin-left: 40px;
+        margin-top: 7px;
+    }
+
+    .textviewmode img:hover {
+        transform: scale(1.3);
+        transition: all 0.5s;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+    }
+</style>
+
+<body>
+    <nav class="navbar sticky-top" style="background-color: #7930A5; width: auto;">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="pic/logo-amikom.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            </a>
+            <span class="navbar-text">
+                List RPS
+            </span>
+            <a href="dashboard.html">
+                <button type="submit" class="btn btn-warning ms-auto">Kembali ke Dashboard</button>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container-fluid mx-3">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">RPS Terkini</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Draft Terkini</button>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+
+            <form class="d-flex ml-auto" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+            </form>
+            <br>
+            <div class="textviewmode"> View Mode:
+                <a href="list.html"><img src="pic/grid.png" alt="Grid View"></a>
+                <a href="list-list.html"><img src="pic/list.png" alt="List View"></a>
+            </div>
+        </div>
+        <br>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="card">
+                    <div class="card-header">
+                        Judul RPS #1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Program Studi #1</h5>
+                        <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                        <a href="view.html" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Judul RPS #1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Program Studi #1</h5>
+                        <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                        <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Judul RPS #1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Program Studi #1</h5>
+                        <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                        <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Judul RPS #1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Program Studi #1</h5>
+                        <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                        <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="card">
+                <div class="card-header">
+                    Judul RPS #1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Program Studi #1</h5>
+                    <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                    <a href="view.html" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Judul RPS #1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Program Studi #1</h5>
+                    <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                    <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Judul RPS #1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Program Studi #1</h5>
+                    <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                    <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Judul RPS #1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Program Studi #1</h5>
+                    <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                    <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Judul RPS #1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Program Studi #1</h5>
+                    <p class="card-text">Semester #1 / Mata Kuliah #1 / Tahun Ajaran #1</p>
+                    <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-warning btn-sm float-end" style="margin-top: -55px;">Detail RPS</a>
+            </div>
+        </div> -->
+
+        <script> src = "bootstrap/js/bootstrap.js"</script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

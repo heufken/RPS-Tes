@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>List RPS</title>
+    <link rel="icon" href="pic/icon-amikom.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    .navbar-text {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+
+    .nav-tabs .nav-link {
+        background-color: #ffbf35;
+        color: #000000;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #c79b3b;
+        border-bottom: 2px solid #000000;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+
+    .card-body {
+        background-color: #7930A5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card-header {
+        background-color: #51236e;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .search-input {
+        width: 200px;
+        margin-left: 1045px;
+    }
+
+    .textviewmode {
+        text-align: right;
+        margin-right: 60px;
+    }
+
+    .textviewmode img {
+        width: 15px;
+        float: right;
+        margin-right: 10px;
+        margin-left: 40px;
+        margin-top: 7px;
+    }
+
+    .textviewmode img:hover {
+        transform: scale(1.3);
+        transition: all 0.5s;
+    }
+
+    .row {
+        margin-right: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar sticky-top" style="background-color: #7930A5;">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="pic/logo-amikom.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            </a>
+            <span class="navbar-text">
+                List RPS
+            </span>
+            <a href="dashboard.html">
+                <button type="submit" class="btn btn-warning ms-auto">Kembali ke Dashboard</button>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container-fluid mx-3">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">RPS Terkini</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Draft Terkini</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+
+            <form class="d-flex ml-auto" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+            </form>
+            <br>
+            <div class="textviewmode"> View Mode:
+                <a href="list.html"><img src="pic/grid.png" alt="Grid View"></a>
+                <a href="list-list.html"><img src="pic/list.png" alt="List View"></a>
+            </div>
+
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="view.html" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #2</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <ul class="pagination justify-content-center" id="rpsTerkiniPagination"></ul>
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul Draft #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="view.html" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul Draft #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul Draft #2</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul Draft #2</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-secondary mb-4 mt-4">
+                            <div class="card-header">Judul RPS #1</div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #FFFFFF;">Program Studi #1</h5>
+                                <p class="card-text" style="color: #FFFFFF;">Matakuliah #1</p>
+                                <p class="card-text" style="color: #FFFFFF;">Semester #1</p>
+                                <a href="#" class="btn btn-warning ml-5">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <ul class="pagination justify-content-center" id="rpsTerkiniPagination" style="display: none;"></ul> -->
+                <ul class="pagination justify-content-center" id="draftTerkiniPagination"></ul>
+            </div>
+
+
+
+        </div>
+
+        <script>
+            // Mendapatkan elemen paginasi RPS Terkini dan Draft Terkini
+            const rpsTerkiniPagination = document.querySelector("#rpsTerkiniPagination");
+            const draftTerkiniPagination = document.querySelector("#draftTerkiniPagination");
+
+            // Mendapatkan jumlah item card di setiap bagian
+            const rpsTerkiniItems = document.querySelectorAll("#nav-home .card");
+            const draftTerkiniItems = document.querySelectorAll("#nav-profile .card");
+
+            // Menentukan jumlah item per halaman
+            const itemsPerPage = 8;
+
+            // Menghitung jumlah halaman untuk RPS Terkini dan Draft Terkini
+            const rpsTerkiniPageCount = Math.ceil(rpsTerkiniItems.length / itemsPerPage);
+            const draftTerkiniPageCount = Math.ceil(draftTerkiniItems.length / itemsPerPage);
+
+            // Membuat fungsi untuk membuat daftar halaman
+            function createPagination(pageCount, paginationElement, items) {
+                // Hapus daftar halaman yang sudah ada
+                paginationElement.innerHTML = "";
+
+                // Buat elemen halaman untuk setiap halaman
+                for (let i = 1; i <= pageCount; i++) {
+                    const pageItem = document.createElement("li");
+                    pageItem.classList.add("page-item");
+
+                    const pageLink = document.createElement("a");
+                    pageLink.classList.add("page-link");
+                    pageLink.href = "#";
+                    pageLink.textContent = i;
+
+                    pageItem.appendChild(pageLink);
+                    paginationElement.appendChild(pageItem);
+                }
+
+                // Tambahkan event listener untuk setiap halaman
+                const pageLinks = paginationElement.querySelectorAll(".page-link");
+                pageLinks.forEach((link, index) => {
+                    link.addEventListener("click", () => {
+                        showPage(items, index);
+                    });
+                });
+
+                // Tampilkan halaman pertama secara default
+                showPage(items, 0);
+            }
+
+            // Fungsi untuk menampilkan halaman
+            function showPage(items, pageIndex) {
+                const start = pageIndex * itemsPerPage;
+                const end = start + itemsPerPage;
+
+                items.forEach((item, index) => {
+                    if (index >= start && index < end) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            // Panggil fungsi untuk membuat paginasi RPS Terkini dan Draft Terkini
+            createPagination(rpsTerkiniPageCount, rpsTerkiniPagination, rpsTerkiniItems);
+            createPagination(draftTerkiniPageCount, draftTerkiniPagination, draftTerkiniItems);
+
+            function showDraftTerkiniPagination() {
+                document.getElementById("rpsTerkiniPagination").style.display = "none";
+                document.getElementById("draftTerkiniPagination").style.display = "block";
+            }
+
+            function showRpsTerkiniPagination() {
+                document.getElementById("rpsTerkiniPagination").style.display = "block";
+                document.getElementById("draftTerkiniPagination").style.display = "none";
+            }
+
+
+
+        </script>
+
+        <!-- <nav aria-label="pagenumber">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="list.html">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="list2.html">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="list3.html">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="list2.html">Next</a>
+                    </li>
+                </ul>
+            </nav> -->
+        <script> src = "bootstrap/js/bootstrap.js"</script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
